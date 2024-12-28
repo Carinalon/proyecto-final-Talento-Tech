@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+    <title>Ecommerce</title>
+</head>
+<body>
+  <!--   Encabezado principal -->
+     <header>
+        <h1><img src="img/logo.png" alt="logo"></h1><!--  Titulo del sitio -->
+        
+      <!--   icono del carrito , con enlace a la pagina del carrito -->
+         <a href="carrito.html" class="icono-carrito">🛒 <span id="contador-carrito">0</span></a>
+     </header>
+
+<!--      Barra de navegacion principal -->
+      <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+
+    <!--   seccion de productos -->
+       <section id="productos" class="productos">
+       <!--  producto con descripcion , precio y bton para agregar al carrito -->
+         <article class="producto">
+            <h2>Producto 1</h2>
+            <img src="img/item16.jpg" alt="">
+            <p>Descripcion del producto</p>
+            <p class="precio">$100</p>
+            <button onclick="agregarAlcarrito('Producto 1', 100)" >Agregar</button>
+         </article>
+
+                <!--  producto con descripcion , precio y bton para agregar al carrito -->
+                <article class="producto">
+                    <h2>Producto 2</h2>
+                    <img src="img/item9.jpg" alt="">
+                    <p>Descripcion del producto 2</p>
+                    <p class="precio">$200</p>
+                    <button onclick="agregarAlcarrito('Producto 2', 200)" >Agregar</button>
+                 </article>
+
+       </section>
+       <footer id="contacto">
+         <div class="form">
+            <p class="contacto-titulo">Contacto</p>
+            <h4>Escríbenos y en breve nos pondremos en contacto contigo</h4>
+            <form action="" ;>
+                <div>
+                    <label for="nombre" class="colocar_nombre">Nombre</label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="" placeholder="Escribe tu nombre">
+                </div>
+                <div>
+                    <label for="email" class="colocar_email">Email</label>
+                    <input type="email" name="introducir_email" id="email" required="" placeholder="Escribe tu Email">
+                </div>
+                <div>
+                    <label for="asunto" class="colocar_asunto">Asunto</label>
+                    <input type="text" name="asunto" required="" placeholder="Escribe un asunto">
+                </div>
+                <div>
+                    <label for="mensaje" class="mensaje">Mensaje</label>
+                    <textarea name="mensaje" class="texto_mensaje" required="obligatorio"
+                        placeholder="Deja aquí tu comentario..."></textarea>
+                </div>
+            
+                    <button class="button-submit" type="submit" name="enviar_form">
+                        <p>Enviar</p>
+                    </button>
+                </div>
+            </form>
+        </div>
+       </footer>
+
+ <script src="./index.js"></script>
+    
+</body>
+</html>

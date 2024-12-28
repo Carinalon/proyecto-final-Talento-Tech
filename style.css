@@ -1,0 +1,128 @@
+/* --- Estilos básicos y reinicio de márgenes --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Fuente principal */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* --- Encabezado (Header) --- */
+header {
+    display: flex; /* Distribución flexible */
+    justify-content: space-between; /* Elementos separados */
+    align-items: center; /* Alineación vertical */
+    background: #bb6933; /* Color de fondo */
+    color: white; /* Color de texto */
+    padding: 10px 20px; /* Espaciado interno */
+}
+
+header h1 {
+    font-size: 24px; /* Tamaño del título */
+}
+header img{
+    width: 30vh;
+    height: auto;
+}
+
+.icono-carrito {
+    color: white; /* Color del icono */
+    font-size: 24px; /* Tamaño del icono */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* --- Navegación principal --- */
+nav ul {
+    list-style-type: none; /* Sin viñetas */
+    background: #552708; /* Fondo oscuro */
+    padding: 10px; /* Espaciado interno */
+}
+
+nav ul li {
+    display: inline; /* Elementos en línea */
+    margin-right: 15px; /* Separación entre enlaces */
+}
+
+nav ul li a {
+    color: white; /* Color de texto */
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* --- Estilos de productos --- */
+.productos {
+    display: grid; /* Distribución en cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajuste automático */
+    gap: 20px; /* Separación entre productos */
+    margin-top: 20px; /* Margen superior */
+}
+
+.producto {
+    background: #f4f4f4; /* Fondo claro */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Texto centrado */
+}
+
+.producto h2 {
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.producto .precio {
+    color: rgb(78, 41, 6); /* Texto en color verde */
+    font-size: 18px; /* Tamaño de fuente */
+    margin: 10px;
+}
+
+.producto button {
+    background: #552708; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    border: none; /* Sin bordes */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Mano al pasar por encima */
+}
+
+.producto button:hover {
+    background: #555; /* Cambio de color al pasar el cursor */
+}
+
+footer{
+    background: #552708; /* Fondo oscuro */
+    padding: 10px; 
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+input {
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    width: 70%;  
+}
+
+.contacto-titulo, h4{
+    font-family:'chilanka';
+    font-size: 1.5em;
+}
+.texto_mensaje{
+    border: none;
+    padding: 10px;
+    margin: 30px;
+    width: 80%; 
+}
+button{
+    width: 150px;
+    align-self: center;
+    background-color: #e6e6e66b;
+    border-radius: 8px ;
+    border: 1px solid #aaa8a86b;
+    margin-bottom: 8%;
+
+}
+
